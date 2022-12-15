@@ -8,7 +8,7 @@ import styles from "./NavBar.module.css";
 const NavBar = () => {
   const matches = useMediaQuery("(min-width: 650px");
 
-  console.log(matches);
+  // console.log(matches);
 
   return (
     <nav className={styles["nav-bar"]}>
@@ -26,19 +26,19 @@ const NavBar = () => {
       {matches && (
         <ul className={styles["nav-links"]}>
           <li>
-            <a href="#home">Home</a>
+            <a href="#home" target={"_top"}>Home</a>
           </li>
           <li>
-            <a href="#new">New</a>
+            <a href="#new" target={"_top"}>New</a>
           </li>
           <li>
-            <a href="#popular">Popular</a>
+            <a href="#popular" target={"_top"}>Popular</a>
           </li>
           <li>
-            <a href="#trending">Trending</a>
+            <a href="#trending" target={"_top"}>Trending</a>
           </li>
           <li>
-            <a href="#category">Category</a>
+            <a href="#category" target={"_top"}>Category</a>
           </li>
         </ul>
       )}
@@ -71,19 +71,19 @@ const NavBar = () => {
 
                     <ul className={styles["nav-links--side"]}>
                       <li>
-                        <a href="#home">Home</a>
+                        <a href="#home" target={"_top"}>Home</a>
                       </li>
                       <li>
-                        <a href="#new">New</a>
+                        <a href="#new" target={"_top"}>New</a>
                       </li>
                       <li>
-                        <a href="#popular">Popular</a>
+                        <a href="#popular" target={"_top"}>Popular</a>
                       </li>
                       <li>
-                        <a href="#trending">Trending</a>
+                        <a href="#trending" target={"_top"}>Trending</a>
                       </li>
                       <li>
-                        <a href="#category">Category</a>
+                        <a href="#category" target={"_top"}>Category</a>
                       </li>
                     </ul>
                   </div>

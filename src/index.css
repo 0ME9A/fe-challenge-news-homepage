@@ -17,7 +17,8 @@ html {
 
 @media (prefers-reduced-motion: no-preference) {
   html {
-    scroll-behavior: smooth; /* Smoothly animate to different sections within a page, only if the user doesn't mind animations */
+    scroll-behavior: smooth;
+    /* Smoothly animate to different sections within a page, only if the user doesn't mind animations */
   }
 }
 
@@ -52,11 +53,27 @@ a:active {
   text-decoration: none;
 }
 
-a,
-button {
-  touch-action: manipulation; /* Element doesn't want double-tap on mobile to zoom */
+#new-news li:nth-last-child(1) {
+  border: none;
 }
 
-image {
-  max-width: 100%;
+#new-news li {
+  border-bottom: 1px solid var(--dark-grayish-blue);
+  padding-bottom: 20px;
+}
+
+a,
+button {
+  touch-action: manipulation;
+  /* Element doesn't want double-tap on mobile to zoom */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.new-article:last-child {
+  border: none;
 }
