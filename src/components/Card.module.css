@@ -1,0 +1,37 @@
+.card {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.img {
+    width: 30%;
+    height: 100%;
+    margin: 0;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.detail>p {
+    letter-spacing: .5px;
+    color: var(--dark-grayish-blue);
+}
+
+.detail>h2 {
+    font-weight: bold;
+}
+
+.detail>h2:hover {
+    color: var(--soft-red);
+    cursor: pointer;
+}
+
+.id {
+    font-size: 3em;
+    color: var(--grayish-blue);
+    cursor: default;
+
+}

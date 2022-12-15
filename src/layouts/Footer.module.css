@@ -3,7 +3,5 @@
   padding: 3em;
   background-color: var(--gray-300);
   border-top: solid 2px var(--gray-200);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
